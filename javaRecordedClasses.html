@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Java recorded classes</title>
+</head>
+
+
+<body class="bg-slate-900 text-slate-100">
+
+  <!-- header -->
+  <header class="max-w-120 mx-auto mt-8">
+    <h1 class="text-3xl md:text-5xl font-bold max-md:font-black pb-2 bg-gradient-to-r from-orange-400 to-red-600 bg-clip-text text-transparent text-center">
+      Java Recorded Classes
+    </h1>
+    <h1 class="text-[1.2rem] font-bold text-center">By Skill Crafter</h1>
+    <h1 class="text-center text-white/70 font-light">Developed by Salam Priyansu Meitei</h1>
+  </header>
+
+  <!-- description -->
+  <section class="p-4 text-center max-w-270 mx-auto max-sm:text-[0.8rem]">
+    <i>
+      "This webpage displays daily recorded classes for Java Full Stack Development, providing a convenient resource for students to review and reinforce their learning. Please note that this is not an official webpage, but rather a supplementary platform designed to facilitate easier and faster revision of the course material. The recordings are intended to support students in their studies, offering a quick reference point for key concepts and topics covered in the Java Full Stack Development course."
+    </i>
+    <h1 class="mt-4 text-white/70">GitHub link (source code) : 
+      <a href="https://github.com/PsmLuwang/30daysChallenge.git" class="underline max-sm:text-[0.7rem]" target="_blank">
+        https://github.com/PsmLuwang/30daysChallenge.git
+      </a>
+    </h1>
+  </section>
+
+  <!-- main section, prject showcase -->
+  <main class="mt-8">
+    <h1 class="text-center text-2xl font-bold w-60 bg-gradient-to-r from-orange-400 to-red-600 bg-clip-text text-transparent mx-auto">Recorded classes</h1>
+
+    <section id="projectContainer" class="grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-2 p-4">
+      <!-- render projects -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white py-12 mt-8" id="contact">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">Project Showcase</h3>
+            <p class="text-gray-400">An open source web page. All these projects are developed during the 30 Days Challenge.</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Contact Me</h3>
+            <address class="text-gray-400 not-italic">
+              <p><i class="fas fa-map-marker-alt mr-2"></i> Haoreibi Mayai Leikai, Imphal West, 795009</p>
+              <p class="mt-2"><i class="fas fa-phone mr-2"></i> +91-7005194248</p>
+              <p class="mt-2"><i class="fas fa-envelope mr-2"></i> spriyansumeitei@gmail.com</p>
+            </address>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+            <div class="flex space-x-4">
+              <a href="https://www.facebook.com/psm.luwang/" target="_blank" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-facebook"></i></a>
+              <!-- <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-twitter"></i></a> -->
+              <a href="https://www.instagram.com/priyansu_salam/?hl=en" target="_blank" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-instagram"></i></a>
+              <!-- <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-youtube"></i></a> -->
+            </div>
+            <p class="text-gray-400 mt-4">Subscribe to our newsletter for deals!</p>
+          </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+          <p>&copy; 2025 30DaysChallenge. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    const projects = [
+      {
+        href: "https://psmluwang.github.io/30daysChallenge/day-01/ass_01_portfolio/",
+        img: "portfolio.png",
+        name: "Portfolio",
+        assNo: "Day-01 Assignment-01",
+        tech: "HTML5, Tailwind CSS, Font Awesome"
+      },
+      {
+        href: "https://psmluwang.github.io/30daysChallenge/day-01/ass_02_recipeBlog/",
+        img: "recipeBlog.png",
+        name: "Recipe Blog",
+        assNo: "Day-01 Assignment-02",
+        tech: "HTML5, Tailwind CSS, Font Awesome"
+      },
+      {
+        href: "https://psmluwang.github.io/30daysChallenge/day-01/ass_03_quiz/",
+        img: "quiz.png",
+        name: "Quiz",
+        assNo: "Day-01 Assignment-03",
+        tech: "HTML5, Tailwind CSS, JavaScript"
+      },
+      {
+        href: "https://psmluwang.github.io/30daysChallenge/day-01/ass_04_imageGallery/",
+        img: "imageGallery.png",
+        name: "Image Gallery",
+        assNo: "Day-01 Assignment-04",
+        tech: "HTML5, Tailwind CSS, JavaScript"
+      },
+      {
+        href: "https://psmluwang.github.io/30daysChallenge/day-01/ass_05_musicAlbum/",
+        img: "musicPlayer.png",
+        name: "Music Player",
+        assNo: "Day-01 Assignment-05",
+        tech: "HTML5, Tailwind CSS, JavaScript, Font Awesome"
+      },
+      {
+        href: "https://psmluwang.github.io/30daysChallenge/day-01/ass_06_productCatalog/",
+        img: "productCatalog.png",
+        name: "Product Catalog",
+        assNo: "Day-01 Assignment-06",
+        tech: "HTML5, Tailwind CSS, JavaScript, Font Awesome"
+      },
+      {
+        href: "https://psmluwang.github.io/30daysChallenge/day-01/ass_07_travelBlog/",
+        img: "travelBlog.png",
+        name: "Travel Blog",
+        assNo: "Day-01 Assignment-07",
+        tech: "HTML5, Tailwind CSS, JavaScript, Font Awesome"
+      },
+      {
+        href: "https://psmluwang.github.io/30daysChallenge/day-01/ass_08_review/",
+        img: "review.png",
+        name: "Review",
+        assNo: "Day-01 Assignment-08",
+        tech: "HTML5, Tailwind CSS, Javacript, Font Awesome"
+      },
+      {
+        href: "https://psmluwang.github.io/30daysChallenge/day-01/ass_09_portfolioCopy/",
+        img: "portfolio.png",
+        name: "Portfolio",
+        assNo: "Day-01 Assignment-09",
+        tech: "HTML5, Tailwind CSS, Font Awesome"
+      },
+      {
+        href: "https://psmluwang.github.io/30daysChallenge/day-01/ass_10_FAQ/",
+        img: "faq.png",
+        name: "FAQ",
+        assNo: "Day-01 Assignment-10",
+        tech: "HTML5, Tailwind CSS, Javascript, Font Awesome"
+      },
+      {
+        href: "https://psmluwang.github.io/30daysChallenge/day-02/",
+        img: "youtubeClone.png",
+        name: "YouTube Clone",
+        assNo: "Day-02 Assignment-01",
+        tech: "HTML5, Tailwind CSS, JavaScript, Font Awesome"
+      },
+      {
+        href: "https://psmluwang.github.io/30daysChallenge/ass-01-dt-27042025/",
+        img: "taskManager.png",
+        name: "Task Manager",
+        assNo: "Assignment-01 Date: 27/04/2025",
+        tech: "HTML5, Tailwind CSS, JavaScript, Font Awesome"
+      },
+      
+    ]
+    const projectContainer = document.getElementById("projectContainer");
+    for (let i = 0; i < projects.length; i++) {
+      const card = `
+        <a href="${projects[i].href}" target="_self" class="bg-slate-800 p-1 rounded-[5px] hover:scale-[1.01] hover:shadow-[0_2px_8px_rgba(225,225,225,0.1)] transition-[0.3s]">
+          <div>
+            <img src="./img/${projects[i].img}" alt="" class="w-full aspect-[2/1] object-cover rounded-[3px]">
+          </div>
+    
+          <div class="p-2">
+            <span class="font-bold">${projects[i].name}</span>
+            <p class="text-[0.8rem] text-white/60">${projects[i].assNo}</p>
+            <p class="text-[0.8rem] text-white/60">Tech used: ${projects[i].tech}</p>
+          </div>
+        </a>
+      `;
+      
+      projectContainer.innerHTML += card;
+    }
+  </script>
+</body>
+</html>
+
+<!-- https://psmluwang.github.io/30daysChallenge/ -->
