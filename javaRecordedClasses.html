@@ -26,18 +26,18 @@
       "This webpage displays daily recorded classes for Java Full Stack Development, providing a convenient resource for students to review and reinforce their learning. Please note that this is not an official webpage, but rather a supplementary platform designed to facilitate easier and faster revision of the course material. The recordings are intended to support students in their studies, offering a quick reference point for key concepts and topics covered in the Java Full Stack Development course."
     </i>
     <h1 class="mt-4 text-white/70">GitHub link (source code) : 
-      <a href="https://github.com/PsmLuwang/30daysChallenge.git" class="underline max-sm:text-[0.7rem]" target="_blank">
-        https://github.com/PsmLuwang/30daysChallenge.git
+      <a href="https://github.com/PsmLuwang/javaFullStack.git" class="underline max-sm:text-[0.7rem]" target="_blank">
+        https://github.com/PsmLuwang/javaFullStack.git
       </a>
     </h1>
   </section>
 
-  <!-- main section, prject showcase -->
+  <!-- main section -->
   <main class="mt-8">
     <h1 class="text-center text-2xl font-bold w-60 bg-gradient-to-r from-orange-400 to-red-600 bg-clip-text text-transparent mx-auto">Recorded classes</h1>
 
-    <section id="projectContainer" class="grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-2 p-4">
-      <!-- render projects -->
+    <section id="classContainer" class="grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-2 p-4">
+      <!-- render recorded classes -->
     </section>
 
     <!-- Footer -->
@@ -45,8 +45,8 @@
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 class="text-xl font-bold mb-4">Project Showcase</h3>
-            <p class="text-gray-400">An open source web page. All these projects are developed during the 30 Days Challenge.</p>
+            <h3 class="text-xl font-bold mb-4">Java Full Stack</h3>
+            <p class="text-gray-400">Java Full Stack Development refers to the development of both front-end (client-side) and back-end (server-side) parts of a web application. This involves using Java programming language for server-side development, along with front-end technologies like HTML, CSS, JavaScript, and frameworks like Angular.</p>
           </div>
           <div>
             <h3 class="text-xl font-bold mb-4">Contact Me</h3>
@@ -68,120 +68,47 @@
           </div>
         </div>
         <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2025 30DaysChallenge. All rights reserved.</p>
+          <p>&copy; 2025 javaFullStack. All rights reserved.</p>
         </div>
       </div>
     </footer>
   </main>
 
   <script>
-    const projects = [
+    const recordedClasses = [
       {
-        href: "https://psmluwang.github.io/30daysChallenge/day-01/ass_01_portfolio/",
-        img: "portfolio.png",
-        name: "Portfolio",
-        assNo: "Day-01 Assignment-01",
-        tech: "HTML5, Tailwind CSS, Font Awesome"
+        href: "https://youtu.be/vY0jVxb0mEs",
+        img: "day01.jpeg",
+        name: "Day-01",
+        duration: "52 mins 44 secs",
+        topic: "Data Types"
       },
       {
-        href: "https://psmluwang.github.io/30daysChallenge/day-01/ass_02_recipeBlog/",
-        img: "recipeBlog.png",
-        name: "Recipe Blog",
-        assNo: "Day-01 Assignment-02",
-        tech: "HTML5, Tailwind CSS, Font Awesome"
+        href: "https://youtu.be/Xa2Ol5c7oqo",
+        img: "day02.jpeg",
+        name: "Day-02",
+        duration: "1 hr 05 mins 27 secs",
+        topic: "Type Casting"
       },
-      {
-        href: "https://psmluwang.github.io/30daysChallenge/day-01/ass_03_quiz/",
-        img: "quiz.png",
-        name: "Quiz",
-        assNo: "Day-01 Assignment-03",
-        tech: "HTML5, Tailwind CSS, JavaScript"
-      },
-      {
-        href: "https://psmluwang.github.io/30daysChallenge/day-01/ass_04_imageGallery/",
-        img: "imageGallery.png",
-        name: "Image Gallery",
-        assNo: "Day-01 Assignment-04",
-        tech: "HTML5, Tailwind CSS, JavaScript"
-      },
-      {
-        href: "https://psmluwang.github.io/30daysChallenge/day-01/ass_05_musicAlbum/",
-        img: "musicPlayer.png",
-        name: "Music Player",
-        assNo: "Day-01 Assignment-05",
-        tech: "HTML5, Tailwind CSS, JavaScript, Font Awesome"
-      },
-      {
-        href: "https://psmluwang.github.io/30daysChallenge/day-01/ass_06_productCatalog/",
-        img: "productCatalog.png",
-        name: "Product Catalog",
-        assNo: "Day-01 Assignment-06",
-        tech: "HTML5, Tailwind CSS, JavaScript, Font Awesome"
-      },
-      {
-        href: "https://psmluwang.github.io/30daysChallenge/day-01/ass_07_travelBlog/",
-        img: "travelBlog.png",
-        name: "Travel Blog",
-        assNo: "Day-01 Assignment-07",
-        tech: "HTML5, Tailwind CSS, JavaScript, Font Awesome"
-      },
-      {
-        href: "https://psmluwang.github.io/30daysChallenge/day-01/ass_08_review/",
-        img: "review.png",
-        name: "Review",
-        assNo: "Day-01 Assignment-08",
-        tech: "HTML5, Tailwind CSS, Javacript, Font Awesome"
-      },
-      {
-        href: "https://psmluwang.github.io/30daysChallenge/day-01/ass_09_portfolioCopy/",
-        img: "portfolio.png",
-        name: "Portfolio",
-        assNo: "Day-01 Assignment-09",
-        tech: "HTML5, Tailwind CSS, Font Awesome"
-      },
-      {
-        href: "https://psmluwang.github.io/30daysChallenge/day-01/ass_10_FAQ/",
-        img: "faq.png",
-        name: "FAQ",
-        assNo: "Day-01 Assignment-10",
-        tech: "HTML5, Tailwind CSS, Javascript, Font Awesome"
-      },
-      {
-        href: "https://psmluwang.github.io/30daysChallenge/day-02/",
-        img: "youtubeClone.png",
-        name: "YouTube Clone",
-        assNo: "Day-02 Assignment-01",
-        tech: "HTML5, Tailwind CSS, JavaScript, Font Awesome"
-      },
-      {
-        href: "https://psmluwang.github.io/30daysChallenge/ass-01-dt-27042025/",
-        img: "taskManager.png",
-        name: "Task Manager",
-        assNo: "Assignment-01 Date: 27/04/2025",
-        tech: "HTML5, Tailwind CSS, JavaScript, Font Awesome"
-      },
-      
     ]
-    const projectContainer = document.getElementById("projectContainer");
-    for (let i = 0; i < projects.length; i++) {
+    const classContainer = document.getElementById("classContainer");
+    for (let i = 0; i < recordedClasses.length; i++) {
       const card = `
-        <a href="${projects[i].href}" target="_self" class="bg-slate-800 p-1 rounded-[5px] hover:scale-[1.01] hover:shadow-[0_2px_8px_rgba(225,225,225,0.1)] transition-[0.3s]">
+        <a href="${recordedClasses[i].href}" target="_self" class="bg-slate-800 p-1 rounded-[5px] hover:scale-[1.01] hover:shadow-[0_2px_8px_rgba(225,225,225,0.1)] transition-[0.3s]">
           <div>
-            <img src="./img/${projects[i].img}" alt="" class="w-full aspect-[2/1] object-cover rounded-[3px]">
+            <img src="./thumbnails/${recordedClasses[i].img}" alt="" class="w-full aspect-[2/1] object-cover rounded-[3px]">
           </div>
     
           <div class="p-2">
-            <span class="font-bold">${projects[i].name}</span>
-            <p class="text-[0.8rem] text-white/60">${projects[i].assNo}</p>
-            <p class="text-[0.8rem] text-white/60">Tech used: ${projects[i].tech}</p>
+            <span class="font-bold">${recordedClasses[i].name}</span>
+            <p class="text-[0.8rem] text-white/60">Duration: ${recordedClasses[i].duration}</p>
+            <p class="text-[0.8rem] text-white/60">Topic: ${recordedClasses[i].topic}</p>
           </div>
         </a>
       `;
       
-      projectContainer.innerHTML += card;
+      classContainer.innerHTML += card;
     }
   </script>
 </body>
 </html>
-
-<!-- https://psmluwang.github.io/30daysChallenge/ -->
