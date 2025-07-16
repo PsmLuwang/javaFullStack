@@ -5,14 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/webp" href="public/java.webp">
   <title>Java recorded classes</title>
+
+  <style>
+    .videoCard {
+      transition: all 0.3s ease;
+    }
+    .videoCard:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+  
+  </style>
 </head>
 
 
 <body class="bg-slate-900 text-slate-100">
 
   <!-- header -->
-  <header class="max-w-120 mx-auto mt-8">
+  <header class="max-w-140 mx-auto mt-8 px-3">
     <h1 class="text-3xl md:text-5xl font-bold max-md:font-black pb-2 bg-gradient-to-r from-orange-400 to-red-600 bg-clip-text text-transparent text-center">
       Java Recorded Classes
     </h1>
@@ -34,7 +46,7 @@
 
   <!-- main section -->
   <main class="mt-8">
-    <h1 class="text-center text-2xl font-bold w-60 bg-gradient-to-r from-orange-400 to-red-600 bg-clip-text text-transparent mx-auto">Recorded classes</h1>
+    <h1 class="text-center text-2xl font-bold w-60 bg-gradient-to-r from-orange-400 to-red-600 bg-clip-text text-transparent mx-auto">Recorded Classes</h1>
 
     <section id="classContainer" class="grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-2 p-4">
       <!-- render recorded classes -->
@@ -79,30 +91,65 @@
       {
         href: "https://youtu.be/vY0jVxb0mEs",
         img: "day01.jpeg",
-        name: "Day-01",
+        date: "5th July 2025",
         duration: "52 mins 44 secs",
         topic: "Data Types"
       },
       {
         href: "https://youtu.be/Xa2Ol5c7oqo",
         img: "day02.jpeg",
-        name: "Day-02",
+        date: "7th July 2025",
         duration: "1 hr 05 mins 27 secs",
         topic: "Type Casting"
+      },
+      {
+        href: "https://youtu.be/fuTo7CyRHqI?si=Om1aBJAJSj6fmAxP",
+        img: "day03.jpeg",
+        date: "9th July 2025",
+        duration: "1 hr 04 mins 27 secs",
+        topic: "JDBC Program"
+      },
+      {
+        href: "https://youtu.be/-xBW1nQjpMw?si=07Qq_W2hG4neg112",
+        img: "day04.jpeg",
+        date: "10th July 2025",
+        duration: "37 mins 24 secs",
+        topic: "INSERT data into database table | JDBC Program"
+      },
+      {
+        href: "https://youtu.be/RcmDWPzUgrA",
+        img: "day05.jpeg",
+        date: "11th July 2025",
+        duration: "36 mins 49 secs",
+        topic: "CRUD Operation"
+      },
+      {
+        href: "https://youtu.be/jSeVPszkJys",
+        img: "day06.jpeg",
+        date: "14th July 2025",
+        duration: "46 mins 51 secs",
+        topic: "Servlet program in Java MYSQL database"
+      },
+      {
+        href: "https://youtu.be/iud6OJUhcE0",
+        img: "day07.jpeg",
+        date: "15th July 2025",
+        duration: "41 mins 05 secs",
+        topic: "Website develop with Bootstrap5"
       },
     ]
     const classContainer = document.getElementById("classContainer");
     for (let i = 0; i < recordedClasses.length; i++) {
       const card = `
-        <a href="${recordedClasses[i].href}" target="_self" class="bg-slate-800 p-1 rounded-[5px] hover:scale-[1.01] hover:shadow-[0_2px_8px_rgba(225,225,225,0.1)] transition-[0.3s]">
+        <a href="${recordedClasses[i].href}" target="_self" class="videoCard bg-slate-800 p-1 rounded-[5px] hover:shadow-[0_2px_8px_rgba(225,225,225,0.1)] transition-[0.3s]">
           <div>
             <img src="./thumbnails/${recordedClasses[i].img}" alt="" class="w-full aspect-[2/1] object-cover rounded-[3px]">
           </div>
     
           <div class="p-2">
-            <span class="font-bold">${recordedClasses[i].name}</span>
+            <span class="font-bold">${recordedClasses[i].topic}</span>
             <p class="text-[0.8rem] text-white/60">Duration: ${recordedClasses[i].duration}</p>
-            <p class="text-[0.8rem] text-white/60">Topic: ${recordedClasses[i].topic}</p>
+            <p class="text-[0.8rem] text-white/60">Date: ${recordedClasses[i].date}</p>
           </div>
         </a>
       `;
