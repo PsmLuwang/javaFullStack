@@ -144,9 +144,17 @@
         duration: "34 mins 58 secs",
         topic: "Servlet program to INSERT data into database"
       },
+      {
+        href: "https://youtu.be/oeGRSlYrfXw",
+        img: "day09.jpeg",
+        date: "18th July 2025",
+        duration: "32 mins 48 secs",
+        topic: "Servlet program in Java (Read)"
+      },
     ]
     const classContainer = document.getElementById("classContainer");
-    for (let i = 0; i < recordedClasses.length; i++) {
+    const reverseData = recordedClasses.reverse();
+    for (let i = 0; i < reverseData.length; i++) {
       const card = `
         <a href="${recordedClasses[i].href}" target="_self" class="videoCard bg-slate-800 p-1 rounded-[5px] hover:shadow-[0_2px_8px_rgba(225,225,225,0.1)] transition-[0.3s]">
           <div>
